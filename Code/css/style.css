@@ -11,21 +11,14 @@
 }
 
 .navbar{
-  /*width: 78px;
-  height: 33px;*/
   height: 89px;
   text-transform: uppercase;
   font-family: Lato;
   font-size: 13px;
   font-weight: 400;
   color: #868686;
-
 }
-/*
-.nav-item
-{
-  width: 78px
-}*/
+
 .nav-item a:hover{
   background-color: #ffbb42;
 }
@@ -38,25 +31,9 @@ header {
   margin-bottom: 60px;
 }
 
-/*
-.justify-content-center {
-  -ms-flex-pack: center !important;
-  justify-content: center !important;
-}*/
-
  .imageCarusel {
    position: absolute;
    bottom: -50px;
-
-   /*
-   padding-top: 213px;
-   padding-bottom: 63px;*/
-
-  /* margin-top: 150px;*/
-  /* margin-left: 200px;*/
-   /*margin: 126px 250px auto;*/
-  /* width: 423px;
-   height: 251px;*/
  }
 
  
@@ -85,10 +62,10 @@ font-family: "Open Sans";
 font-weight: 300;
 }
 
-  header .form-inline{
+header .form-inline{
     height: 44px;
     padding-top: 50px; 
-  }
+}
   
   .btnRequest{
     width: 200px;
@@ -505,42 +482,61 @@ text-transform: uppercase;
   line-height: 20.86px;
   color: #394b50;}
 
-  .form_box{
+
+
+  .inputWithIcon{
       height: 105px;
       padding-top: 50px; 
+      position: relative;
     }
  
 
   .ContactName {
     width: 293px;
     height: 45px;
+    border-radius: 3px; /* Уголки */
     border: 1px solid #cbcbcb;
-    background-image: url("../img/icons/icon_text.png");   
+   
+   
+   /* background-image: url("../img/icons/icon_text.png");   
     background-repeat: no-repeat; /*Убираем повтор изображения*/   
-    /*background-position: 4px; /*Позиционируем*/   
-    /*outline: none; /*убираем стандартную обводку браузера*/   
-    /*-moz-border-radius: 5px; /*закругляем углы для Mozilla*/  
-    /*-webkit-border-radius: 5px; /*закругляем углы для Chrome, Safari*/   
-    /*border-radius: 5px; /*закругляем углы для остальных браузеров*/  
-    /*padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
-   /* height: 20px; /*высота строки ввода*/   
-    /*font-size: 13px; /*размер шрифта*/
+    /*background-position: 14px; /*Позиционируем*/   
+   
+    padding-left: 40px; /*отступ слева от ввода, чтобы текст не был на картинке*/  
+    color: #a9a9a9;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .ContactEmail {
-  margin: 0 0 0 5px;
   width: 369px;
   height: 45px;
+  border-radius: 3px; /* Уголки */
   border: 1px solid #cbcbcb;
   background-color: #ffffff;
-  /*background-image: url("../img/icons/icon_call.png");   
- /* background-repeat: no-repeat; /*Убираем повтор изображения*/  
-  background: url("../img/icons/icon_call.png") 3em 10% no-repeat;
+  /*background-image: url("../img/icons/icon_call.png");  
+  background-repeat: no-repeat; /*Убираем повтор изображения*/   
+  /*background-position: 15px; /*Позиционируем*/   
+  padding-left: 44px; /*отступ слева от ввода, чтобы текст не был на картинке*/  
+  color: #a9a9a9;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  }
+.social_networks_icons
+{
+  position: absolute;
+  top: 65px;
+  color: #aaa;
+  font-size: 15px;
 }
 
-  
+
+
+
 .info_button_subscribe {
-  margin: -8px 0 0 5px;
+  margin: -3px 0 0 5px;
   width: 207px;
   height: 45px;
   color: #ffffff;
