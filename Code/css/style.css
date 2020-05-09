@@ -15,16 +15,27 @@
   text-transform: uppercase;
   font-family: Lato;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 700;
   color: #868686;
+  letter-spacing: -0.01em;
+}
+
+.navbar-nav{
+  margin: 2px 0 0 306px;
+
+}
+
+.nav-item {
+  margin-right: 18px;
 }
 
 .nav-item a:hover{
   background-color: #ffbb42;
 }
 
+
 header {
-  height: 652px;
+  height: 647px;
   padding: 156px 0 100px;
   background-color: #709dca;
   position: relative;
@@ -33,16 +44,19 @@ header {
 
  .imageCarusel {
    position: absolute;
-   bottom: -50px;
+   bottom: -61px;
  }
 
- 
 .circle_icon {
-  padding-top: 470px;
+  padding-top: 407px;
+ 
+}
+.slick-dots {
+  margin: 0 1px;
 }
 
-
 .bannertext{
+padding-top: 28px;
 height: 54px;
 color: #ffffff;
 text-align: center;
@@ -51,10 +65,11 @@ text-align: center;
 
 .bannertext h1{
   font-family: "Gotham";
-  font-size: 28px;
+  font-size: 33px;
   font-weight: 900;
   letter-spacing: -0.75px;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
 
 .bannertext p{
@@ -62,33 +77,71 @@ font-family: "Open Sans";
 font-weight: 300;
 }
 
-header .form-inline{
-    height: 44px;
-    padding-top: 50px; 
+
+.banner__request {
+  margin-top: 64px;
 }
+
+.banner__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* FORM field
+===============================*/
+
+.form__item {
   
-  .btnRequest{
-    width: 200px;
-    height: 44px;
-    background-color: #ffbb42;
-  }
+  font-family: "Open Sans";
+  margin: 2px 2px 1px 7px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.form__item input {
+  color: #a9a9a9;
+  padding-left: 39px;
+  /*padding: 18px 20px 18px 47px;*/
+  border: none;
+  border-radius: 2px;
+  width: 267px;
+  height: 44px;
+}
+
+.form__item input::placeholder {
+  font-family: "Open Sans";
+  font-size: 12px;
+  color: #a9a9a9;
+}
+
+.form__item input[type=submit] {
+  background-color: #ffbb42;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 0px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.field-input {
+  position: relative;
+}
+
+.field-icon {
+  color: #6e6e6e;
+  position: absolute;
+  margin: -30px 12px;
   
-  .ContactForm {
-    width: 267px;
-    height: 44px;
-    background-color: #ffffff;
-    margin: 3px;
-    
-  }
+}
 
 
  #service {
-   padding-top: 50px;}
+   /*padding-top: 50px;*/
+   margin: 187px;}
 
    #service img {
- /*width: 44px;
-  height: 45px;*/
-/*border: 2px solid #f6772c;*/
 color: #9aca40;
 font-family: "Font Awesome";
 font-size: 47px;
@@ -103,6 +156,7 @@ height: 539px;
 .Service_Heading {
   text-align: center;
   color: #394b50;
+  line-height: 1;
 }
 
 .Service_Heading h2{
@@ -110,7 +164,8 @@ height: 539px;
   font-size: 28px;
   font-weight: 900;
   letter-spacing: -0.75px;
-  text-transform: uppercase;}
+  text-transform: uppercase;
+margin-bottom: 0;}
 
   .service_block {
     padding-top: 50px;
@@ -138,21 +193,11 @@ text-transform: uppercase;
 height: 592px;
 background-color: #ffc155;
 }
-/*
-#about{
-    height: 518px;
-    background-color: rgb(168, 162, 162);
-}
-
-*/
 
 .pic1{
   background-image: url("../img/aboutus.jpg");
-  /*  <img src="img/aboutus.jpg" alt="ssss">*/
   background-size: cover;
-  /*background-position: center;*/
   height: 592px;
-  /*padding-top: 160px;*/
 }
 
 .pic2{
@@ -160,93 +205,93 @@ background-color: #ffc155;
   background-size: cover;
   background-position: center;
   height: 592px;
-
 }
+
 .aboutustext h2{
-padding-top: 155px;
-padding-left: 100px;
-height: 22px;
-color: #ffffff;
-font-family: "Gotham";
-font-size: 28px;
-font-weight: 400;
-line-height: 20.86px;
-text-transform: uppercase;
-/* Text style for "ABout us" */
-letter-spacing: -0.75px;
+  padding-top: 155px;
+  padding-left: 100px;
+  height: 22px;
+  color: #ffffff;
+  font-family: "Gotham";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 20.86px;
+  text-transform: uppercase;
+  /* Text style for "ABout us" */
+  letter-spacing: -0.75px;
 }
 
 .aboutustext p {
-padding-top: 46px; 
-padding-left: 100px;
-width: 482px;
-height: 152px;
-color: #ffffff;
-font-family: "Open Sans";
-font-size: 12px;
-font-weight: 400;
-line-height: 22.76px;
+  padding-top: 46px; 
+  padding-left: 100px;
+  width: 482px;
+  height: 152px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22.76px;
 }
 
-.info_button {
+#about .info_button {
   margin: 90px auto 0 100px;
   width: 139px;
   height: 44px;
   border: 1px solid #e7ad48;
-  /*background-color: #e7ad48;*/
- 
-
   color: #ffffff;
   font-family: Lato;
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
-  
 }
-.info_button:hover{
+
+#about .info_button:hover{
   background-color:#e7ad48;
   color: #ffffff;
 }
-/*
 
- .aboutus{
-  background-image: url("../img/aboutus.jpg");
-  background-size: cover;
-  height: 592px;
-}
-*/
+/* --------------PRICE----------------*/
+
 
 #price
 {
   height: 853px;
   background-color: #e7edf3;
 }
-/*
- .pl_otherbg
-{
-  margin-top: 90px;
-  width: 375px;
-  height: 476px;
-  background-color: #709dca;
-}*/
 
-.pl {
+.prices__item{
   margin-top: 121px;
-  width: 371px;
+  width: 373px;
   height: 419px;
   border: 1px solid #ccd5df;
   background-color: #ffffff;
-position: relative;
+  position: relative;
 }
 
-
-.pl:hover {
-  transition: transform 1s;
+.prices__item:hover {
+  transition: transform 0.5s;
   transform: scale(1.1);
   background: #709dca;
   z-index: 99;
-  
 }
+
+.prices__item:hover .price__plan {
+  color: #fff;
+}
+
+.prices__item:hover .prices__price {
+  color: #fff;
+}
+
+.prices__item:hover .prices__month {
+  color: #fff;
+}
+
+.prices__item:hover .prices__account {
+  color: #fff;
+
+}
+  
 
 
 
@@ -264,7 +309,7 @@ line-height: 20.86px;
 color: #394b50;
 font-family: "Gotham";
 font-size: 28px;
-font-weight: 400;
+font-weight: 900;
 letter-spacing: -0.75px;
 text-transform: uppercase;
 }
@@ -273,11 +318,10 @@ font-family: "Lato Light";
 font-weight: 300;}
 
 
-.cost {
+.prices__price {
   height: 70px;
   color: #ffbb42;
   font-family: "Lato";
-  /*font-size: 57px;*/
   font-weight: 700;
   text-align: center;
   line-height: 35px;
@@ -292,25 +336,22 @@ font-weight: 300;}
 font-size: 57px;
 }
 
-.per_month
+.prices__month
 {
   color: #818b95;
   font-family: "Lato";
   font-size: 19px;
   font-weight: 300;
-  /*line-height: 20.86px;*/
   font-variant: small-caps;
   text-align: center;
   margin-top: -37px;
 }
-
 
 #price .info_button {
   margin-top: 30px;
   width: 125px;
   height: 41px;
   background-color: #ffbb42;
-/* Style for "Get Starte" */
   color: #ffffff;
   font-family: Lato;
   font-size: 13px;
@@ -319,7 +360,7 @@ font-size: 57px;
   margin: 30px 123px 30px 123px!important;
 }
 
-.pl h3 {
+.prices__item h3 {
   margin-top: 53px;
   color: #818b95;
   font-family: Lato;
@@ -330,7 +371,7 @@ font-size: 57px;
   text-align: center;
 } 
 
-.pl hr{
+.prices__item hr{
   width: 313px;
   height: 1px;
   background: #e2e9f0;
@@ -338,7 +379,7 @@ font-size: 57px;
   
 }
 
-.info_decoration{
+.prices__account{
   height: 30px;
 color: #b5bbc1;
 font-family: Lato;
@@ -349,6 +390,7 @@ text-transform: uppercase;
 text-align: center;}
 
 
+/*---------------------------------HOWITWORK*/
 #howitwork {
 height: 815px;
 }
@@ -360,7 +402,8 @@ height: 815px;
   font-weight: 900;
   letter-spacing: -0.75px;
   text-transform: uppercase;
-  padding-top: 147px;}
+  padding-top: 147px;
+  margin-bottom: 0rem;}
   
 .howitwork_Heading p{
   font-family: "Lato";
@@ -372,8 +415,7 @@ height: 815px;
 
   .howitwork_step {
   /* Style for "" */
-margin-top: 78px;
-font-family: "Font Awesome";
+margin-top: 65px;
 font-size: 68px;
 font-weight: 400;
 line-height: 20.86px;}
@@ -394,12 +436,12 @@ line-height: 20.86px;}
   font-size: 12px;
   font-weight: 400;
   line-height: 20.86px;
-
 }
 
-#howitwork .info_button {
+.howit_button {
   width: 157px;
   height: 45px;
+  margin-top: 65px;
   background-color: #ffbb42;
   color: #ffffff;
   font-family: Lato;
@@ -408,6 +450,7 @@ line-height: 20.86px;}
   text-transform: uppercase;}
 
 
+/*---------------------------------CLIENTS*/
   #clients {
     height: 862px;     
     background-color: #ffc155;
@@ -458,8 +501,17 @@ text-transform: uppercase;
 }
 
 
+
+
+
+
+
+/* NEWSLETTER
+=============================*/
+
 #newsletter {
-  height: 1104px;     
+  height: 898px;   
+  border-bottom: 1px solid #e3e7ec; 
 
 }
 
@@ -483,60 +535,8 @@ text-transform: uppercase;
   color: #394b50;}
 
 
-
-  .inputWithIcon{
-      height: 105px;
-      padding-top: 50px; 
-      position: relative;
-    }
- 
-
-  .ContactName {
-    width: 293px;
-    height: 45px;
-    border-radius: 3px; /* Уголки */
-    border: 1px solid #cbcbcb;
-   
-   
-   /* background-image: url("../img/icons/icon_text.png");   
-    background-repeat: no-repeat; /*Убираем повтор изображения*/   
-    /*background-position: 14px; /*Позиционируем*/   
-   
-    padding-left: 40px; /*отступ слева от ввода, чтобы текст не был на картинке*/  
-    color: #a9a9a9;
-    font-family: "Open Sans";
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.ContactEmail {
-  width: 369px;
-  height: 45px;
-  border-radius: 3px; /* Уголки */
-  border: 1px solid #cbcbcb;
-  background-color: #ffffff;
-  /*background-image: url("../img/icons/icon_call.png");  
-  background-repeat: no-repeat; /*Убираем повтор изображения*/   
-  /*background-position: 15px; /*Позиционируем*/   
-  padding-left: 44px; /*отступ слева от ввода, чтобы текст не был на картинке*/  
-  color: #a9a9a9;
-  font-family: "Open Sans";
-  font-size: 12px;
-  font-weight: 400;
-  }
-.social_networks_icons
-{
-  position: absolute;
-  top: 65px;
-  color: #aaa;
-  font-size: 15px;
-}
-
-
-
-
 .info_button_subscribe {
-  margin: -3px 0 0 5px;
+  margin: 5px 10px;
   width: 207px;
   height: 45px;
   color: #ffffff;
@@ -549,4 +549,173 @@ text-transform: uppercase;
 
 .info_button_subscribe:hover {
   background-color:#e7ad48;
+}
+
+.inputWithIcon input[type="text"], .inputWithIcon input[type="text1"] {
+  height: 45px;
+  border-radius: 3px;
+  border: 1px solid #cbcbcb;
+  margin: 5px 10px;
+}
+
+.inputWithIcon input[type="text"] {
+  width: 293px;
+}
+.inputWithIcon input[type="text1"] {
+  width: 369px;
+}
+.inputWithIcon input[type="text"]:focus, .inputWithIcon input[type="text1"]:focus {
+  border-color:#e7ad48;
+  box-shadow: 0 0 8px 0 #e7ad48;
+}
+
+.inputWithIcon input[type="text"], .inputWithIcon input[type="text1"] {
+    padding-left: 40px;
+    color:#394b50;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  padding: 0px 20px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.inputWithIcon input[type="text"]:focus + i, .inputWithIcon input[type="text1"]:focus + i {
+  color: #e7ad48;
+}
+
+
+.newsletter__addr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 38px;
+  background: url(..//img/map.png) center no-repeat;
+  background-size: cover;
+  height: 550px; 
+}
+
+.newsletter__address {
+  
+  position: absolute;
+  margin-top: -120px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+  font-weight: 400;
+  color:  #aeb7ba;
+
+}
+
+.newsletter__address1 {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  padding-bottom: 22px !important;
+
+}
+
+.newsletter_email {
+  color: #ffbb42;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.newsletter__address p  {
+  margin: 0;
+  padding: 0;
+}
+
+/* FOOTER
+=========================*/
+#footer{
+height: 254px;
+}
+
+.footer__block {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.menu li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.menu a {
+  font-size: 13.5px;
+  line-height: 34px;
+  padding: 0px 20px;
+  color: #868686;
+  text-decoration: none;
+}
+
+.footer__block .menu a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #394b50;
+}
+
+.footer__block .menu a:hover {
+  
+    color: #fff;
+    background-color: #ffbb42;
+    transition: 0.2s;
+  }
+  
+  .footer__phone {
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 400;
+    /*padding: 10px 0 22px;*/
+
+  }
+
+.copyright {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  background-color: #709dca;
+  color: #fff;
+  
+}
+
+.copyright p {
+  padding: 15px 0;
+}
+
+
+/* social_networks_icons
+============================*/
+.social_networks_icons   {
+padding: 10px 0 35px;
+}
+
+.social__item {
+  margin-left: 5px;
+}
+
+.social__icon:hover {
+  color: #ffc155;
+  transition: 0.2s;
+
+}
+.social__icon{
+  color: #709dca;
+  height: 18px;
+  width: 18px;
 }

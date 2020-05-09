@@ -10,8 +10,8 @@
   <title>business</title>
   <link href="css/bootstrap.css" rel="stylesheet"> 
   <link href="css/style.css" rel="stylesheet">
-  <link href="font awesome/all.css" rel="stylesheet">
-  <script src="font awesome/all.js"></script>
+  <link  href="fontawesome/css/all.css" rel="stylesheet">
+  
 </head>
 
 <body id="page-top">
@@ -19,13 +19,13 @@
   <nav class="navbar navbar-expand-lg navbar-light  bg-white fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger header__logo" href="#page-top"><a href="index.html"> <img
-            src="img/icons/logo.jpg" alt="Логотип"></a></a>
+            src="img/icons/logo.png" alt="Логотип"></a></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#home">home</a>
           </li>
@@ -59,11 +59,40 @@
         <h1>Boost up your Local business</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</p>
       </div>
-      <form class="form-inline">
-        <input type="text" class="ContactForm" placeholder="Full Name">
-        <input type="text" class="ContactForm" placeholder="Email Address">
-        <input type="text" class="ContactForm" placeholder="Phone">
-        <button type="submit" class="btnRequest">Request a quote</button>
+
+      <form action="#">
+        <div class="banner__request">
+          <div class="banner__form">
+            <div class="form__item">
+              <div class="field-input">
+                <input type="text" placeholder="Full Name" tabindex="0">
+              </div>
+              <div class="field-icon">
+                <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="field-input">
+                <input type="email" placeholder="Email Adress" tabindex="0">
+              </div>
+              <div class="field-icon">
+                <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="field-input">
+                <input type="text" placeholder="Phone Number" tabindex="0">
+              </div>
+              <div class="field-icon">
+                <i class="fa fa-phone fa-rotate-90" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="form__item">
+              <input type="submit" value="REQUEST A QUOTE" tabindex="0">
+            </div>
+          </div>
+
+        </div>
       </form>
 
       <div class="imageCarusel_laptop d-flex justify-content-center">
@@ -71,9 +100,9 @@
       </div>
 
       <div class="circle_icon d-flex justify-content-center">
-        <img src="img/icons/Ellipse_1.png" alt="">
-        <img src="img/icons/Ellipse_2.png" alt="">
-        <img src="img/icons/Ellipse_2.png" alt="">
+        <img class="slick-dots" src="img/icons/Ellipse_1.png" alt="">
+        <img class="slick-dots" src="img/icons/Ellipse_2.png" alt="">
+        <img class="slick-dots" src="img/icons/Ellipse_2.png" alt="">
 
       </div>
 
@@ -81,6 +110,7 @@
   </header>
 
 
+<!-- SERVICE -->
   <section id="service">
     <div class="container">
 
@@ -188,7 +218,7 @@
     </div>
   </section>
 
-
+<!-- ABOUT -->
   <section id="about">
     <div class="container-fluid">
       <div class="row">
@@ -207,6 +237,7 @@
   </section>
 
 
+ <!-- PRICE -->
 
   <section id="price">
     <div class="container">
@@ -220,67 +251,68 @@
 
       <div class="row price_block">
         <div class="col-lg-4 mx-auto">
-          <section class="pl">
-            <h3>Basic plan</h3>
-            <p class="cost"><span class="dollar">$</span> <span class="how_much">22</span>
-              <div class="per_month">per month</div>
+          <div class="prices__item">
+            <h3 class="price__plan">Basic plan</h3>
+            <p class="prices__price"><span class="dollar">$</span> <span class="how_much">22</span>
+              <div class="prices__month">per month</div>
             </p>
             <hr>
-            <p class="info_decoration">1 Account </p>
+            <p class="prices__account">1 Account </p>
             </hr>
             <hr>
-            <p class="info_decoration"> 8 hour support </p>
+            <p class="prices__account"> 8 hour support </p>
             </hr>
             <hr>
-            <p class="info_decoration"> Custom Cloud Services </p>
+            <p class="prices__account"> Custom Cloud Services </p>
             </hr>
 
             <button type="button" class="btn info_button">Get Started</button>
-          </section>
+          </div>
         </div>
 
         <div class="col-lg-4 mx-auto">
-          <section class="pl">
-            <h3>Premium plan</h3>
-            <p class="cost"><span class="dollar">$</span> <span class="how_much">42</span>
-              <div class="per_month">per month</div>
+          <div class="prices__item">
+            <h3 class="price__plan">Premium plan</h3>
+            <p class="prices__price"><span class="dollar">$</span> <span class="how_much">42</span>
+              <div class="prices__month">per month</div>
             </p>
             <hr>
-            <p class="info_decoration"> 2 Account </p>
+            <p class="prices__account"> 2 Account </p>
             </hr>
             <hr>
-            <p class="info_decoration"> 100MB Storage </p>
+            <p class="prices__account"> 100MB Storage </p>
             </hr>
             <hr>
-            <p class="info_decoration"> Custom Cloud Services </p>
+            <p class="prices__account"> Custom Cloud Services </p>
             </hr>
             <button type="button" class="btn info_button">Get Started</button>
-          </section>
+          </div>
         </div>
 
         <div class="col-lg-4 mx-auto">
-          <section class="pl">
-            <h3>Gold plan</h3>
-            <p class="cost"><span class="dollar">$</span> <span class="how_much">62</span>
-              <div class="per_month">per month</div>
+          <div class="prices__item">
+            <h3 class="price__plan" >Gold plan</h3>
+            <p class="prices__price"><span class="dollar">$</span> <span class="how_much">62</span>
+              <div class="prices__month">per month</div>
             </p>
             <hr>
-            <p class="info_decoration"> 8Account </p>
+            <p class="prices__account"> 8Account </p>
             </hr>
             <hr>
-            <p class="info_decoration"> 24 hour support </p>
+            <p class="prices__account"> 24 hour support </p>
             </hr>
             <hr>
-            <p class="info_decoration"> Custom Cloud Services </p>
+            <p class="prices__account"> Custom Cloud Services </p>
             </hr>
             <button type="button" class="btn info_button">Get Started</button>
-          </section>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
 
+ <!-- HOWITWORK -->
 
   <section id="howitwork">
     <div class="container">
@@ -304,7 +336,7 @@
         </div>
 
 
-        <div class="row ">
+        <div class="row">
           <div class="col-lg-3 mx-auto text-center">
             <img src="img/icons/step1.png" alt="step_icon">
           </div>
@@ -327,7 +359,7 @@
 
         <div class="howitwork_description">
           <div class="row ">
-            <div class="col-lg-3 mx-auto text-center">
+            <div class="col-lg-3 mx-auto  text-center">
               <h3>Step 1</h3>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting ind
                 ustry. Lorem Ipsum has been</p>
@@ -350,7 +382,7 @@
           </div>
           <div class="row ">
             <div class="col-lg-12 mx-auto text-center">
-              <button type="button" class="btn info_button">Get Started Now</button>
+              <button type="button" class="btn howit_button">Get Start Now</button>
             </div>
           </div>
         </div>
@@ -438,7 +470,8 @@
         </section>
       
       
-      
+             <!-- <****** NEWSLETTER*****>-->
+   
 
   <section id="newsletter">
     <div class="container">
@@ -450,33 +483,70 @@
         </div>
       </div>
 
-     <form class="inputWithIcon text-center">
-        <input type="text" class="ContactName" placeholder="Name">
-        <i class="fas fa-user social_networks_icons"></i>
-        <input type="text" class="ContactEmail" placeholder="Email Address"> 
-        <i class="fas fa-envelope social_networks_icons"></i>
-        <button type="button" class=" btn info_button_subscribe">Subscribe now</button>
-      </form>
+    <form class="ContactForm_newsletter text-center">
+       <span class="inputWithIcon">
+          <input type="text" placeholder="Name">
+          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+        </span>
+     
+        <span class="inputWithIcon">
+          <input  type="text1" placeholder="Email Address">
+          <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+        </span>
+        <button type="button" class=" btn info_button_subscribe">Subscribe now</button> 
+      
 
-    
+    <div class="newsletter__addr">
 
-
-
-      <div class="map d-flex justify-content-center">
-        <img class="map_image" src="img/map.png" alt="">
+      <div class="newsletter__address">
+        <p class="newsletter__address1">Address</p>
+        <p>Business street</p>
+        <p>Second north section</p>
+        <p>Bavani nagar. 88769</p>
+        <p>Call : +987-9976-999</p>
+        <a href="mailto:info@businessface.com" class="newsletter_email">info@businessface.com</a>
       </div>
     </div>
+  </form>
+</div>
   </section>
-  
-  
 
 
-  <footer class="py-5 bg-dark">
+
+                    <!-- <******FOOTER*****>-->
+ 
+ <section id="footer">
     <div class="container">
-      <p class="m-0 text-center text-white"> All contents &copy; copyright 2014 Business Theme. All rights reserved
-        Designed by : akhilwebfolio </p>
+     <div class="footer__block">
+        <nav class="menu">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#services">service</a></li>
+            <li><a href="#about_us">about us</a></li>
+            <li><a href="#prices">pricing table</a></li>
+            <li><a href="#">how it work</a></li>
+            <li><a href="#">happy clients</a></li>
+            <li><a href="#">contact us</a></li>
+          </ul>
+        </nav>
+        <div class="footer__phone"><i class="fa fa-phone fa-rotate-90"></i> +987 9976 999</div>
+        
+        <div class="social_networks_icons">
+          <a href="#" class="social__item"><i class="fab fa-twitter social__icon"></i></a>
+          <a href="#" class="social__item"><i class="fab fa-facebook-f social__icon"></i></a>
+          <a href="#" class="social__item"><img src="img/icons/googleplus.png" ></a>
+          <a href="#" class="social__item"><i class="fab fa-linkedin-in social__icon"></i></a>
+        </div>
+      
+      </div>
     </div>
-  </footer>
+    <div class="copyright">
+      <p>All contents © copyright 2014 Business Theme. All rights reserved Designed by : akhilwebfolio</p>
+    </div>
+  </section>
+  <!-- / footer -->
+
+
 
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
