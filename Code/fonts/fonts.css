@@ -598,6 +598,16 @@
 		url('OpenSans-Regular.woff') format('woff'),
 		url('OpenSans-Regular.ttf') format('truetype');
 	font-weight: normal;
+    font-style: normal;
+    
+@font-face {
+	font-family: 'Open Sans';
+	src: url('OpenSans-Regular.eot');
+	src: local('Open Sans Regular'), local('OpenSans-Regular'),
+		url('OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+		url('OpenSans-Regular.woff') format('woff'),
+		url('OpenSans-Regular.ttf') format('truetype');
+	font-weight: 400;
 	font-style: normal;
 }
 
