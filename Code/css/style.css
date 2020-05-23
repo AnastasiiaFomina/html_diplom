@@ -281,7 +281,8 @@ margin-bottom: 1px;
 
 .prices__item:hover {
   transition: transform 0.5s;
-  transform: scale(1.1);
+  /*transform: scale(1.1);*/
+   transform: scale(1.095);
   background: #709dca;
   z-index: 99;
 }
@@ -549,6 +550,7 @@ letter-spacing: 0.2px;
 
 #newsletter {
   height: 899px;
+  border-bottom: 1px solid #e3e7ec;
 }
 
 .newsletter_Heading{
@@ -612,18 +614,18 @@ letter-spacing: 0.2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 38px;
+  margin-top: 35px;
   background: url(..//img/map.png) center no-repeat;
-  background-size: cover;
   height: 550px; 
+  /*margin-bottom: 60px;*/
 }
 
 .newsletter__address {
   
   position: absolute;
-  margin-top: -120px;
+  margin-top: -94px;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   font-size: 13px;
   line-height: 1.8;
   font-weight: 400;
@@ -632,13 +634,12 @@ letter-spacing: 0.2px;
 }
 
 .newsletter__address1 {
-  color: #fff;
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  font-size: 15px;
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 14px;
   font-weight: 700;
-  padding-bottom: 22px !important;
-
+  text-transform: uppercase;
+  padding-bottom: 4px !important;
 }
 
 .newsletter_email {
@@ -731,4 +732,155 @@ padding: 10px 0 35px;
   color: #709dca;
   height: 18px;
   width: 18px;
+}
+
+
+
+
+
+
+/* adaptive
+=============================*/
+@media (max-width: 992px) {
+
+#mainNav {
+  height: auto;
+ padding: 20px;
+}
+}
+
+
+
+/* 797px =====================*/
+
+@media (max-width: 797px) {
+
+  /* banner */
+  .banner {
+    padding-top: 50px;
+  }
+  
+  .imageCarusel {
+    display: none;
+  }
+  .slick-dots{
+    display: none;
+  }
+.banner__form {
+    MARGIN: 110PX;
+    MARGIN-TOP: 6PX;
+}
+ /* service */
+#service {
+  margin: 40px 0 40px;
+  height: auto;
+}
+
+.service_block {
+  width: 100%;
+  padding: 40px 0 0 0;
+}
+
+.services__item {
+    margin-top: 20px;
+}
+.services__icon {
+  width: 15%;
+
+}
+.services__name {
+  width: 85%;
+}
+ /* About us */
+
+ #about {
+  height: auto;
+}
+.about__desc{
+  padding-bottom: 20px;
+  margin-top: 40px;
+  }
+
+.about__title {
+  text-align: center;
+}
+.about__text{
+  width: 90%;
+}
+
+.pic1 {
+  height: 400px;
+}
+
+  /*price*/
+  #price {
+    height: auto;
+  }
+  
+.prices__content {
+  padding-top: 50px;
+ 
+}
+.prices__item {
+  width: 50%;
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+
+
+/* howit*/
+#howitwork {
+  height: auto; 
+}
+.howit__arrow{
+  display: none;}
+.howit__arrow2{
+display: none;}
+
+.howit__inner {
+  padding: 40px 0;
+}
+.step {
+  flex-wrap: nowrap;
+}
+
+}
+/*
+.howit__img {
+  margin-bottom: 50px;
+}*/
+/*
+.howit__item {
+  width: 50%;
+}*/
+
+/* clients*/
+.clients___inner {
+  padding: 40px 0;
+}
+
+.clients__item {
+  width: 100%;
+  }
+
+
+/*newsletter*/
+.newsletter {
+  margin: 40px 0;
+}
+
+.newsletter__address {
+  margin-top: -100px;
+}
+
+.newsletter__address1 {
+  font-size: 16px;
+  
+}
+
+.footer__block nav.menu {
+  display: none;
+}
+}
+
 }
