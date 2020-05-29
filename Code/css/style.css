@@ -28,7 +28,6 @@
 }
 
 .nav-item a:hover{
-  padding: 10px 20px;
   color: #fff;
   background-color: #ffbb42;
   transition: 0.2s;
@@ -672,7 +671,7 @@ letter-spacing: 0.2px;
 =========================*/
 .footer__block {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 42px;
 }
 
 .menu li {
@@ -682,7 +681,7 @@ letter-spacing: 0.2px;
 .menu a {
   font-size: 13.5px;
   line-height: 34px;
-  padding: 0px 20px;
+ /* padding: 0px 20px;*/
   color: #868686;
   text-decoration: none;
 }
@@ -700,12 +699,16 @@ letter-spacing: 0.2px;
   }
   
   .footer__phone {
-    MARGIN-TOP: -7PX;
+    MARGIN-TOP: -15PX;
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
     font-size: 22px;
     font-weight: 400;
   }
+  .footer__block .nav-item {
+    margin-right: -4px;
+}
+
 
 .copyright {
   font-family: "Open Sans", sans-serif;
